@@ -1,0 +1,97 @@
+{% extends 'bases/index.html' %}
+
+{% block slider %} {% endblock slider %}
+
+{% block contenido %}
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>Conferencias</h1>
+				<span>Más recientes</span>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="{% url 'bases:home' %}">Inicio</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Conferencias</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<!-- Posts
+					============================================= -->
+					<div id="posts" class="row grid-container gutter-30">
+
+						<div class="entry col-12">
+							<div class="grid-inner">
+								<div class="entry-image">
+									<a href="/static/base/images/slider/swiper/1.jpg" data-lightbox="image"><img src="/static/base/images/slider/swiper/1.jpg" alt="Standard Post with Image"></a>
+								</div>
+								<div class="entry-title">
+									<h2><a href="{% url 'app:conferencia_view' %}">SACA EL DAVID QUE LLEVAS DENTRO</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 10 de Julio del 2021</li>
+										<li><a href="#"><i class="icon-user"></i> admin</a></li>
+										<!-- <li><i class="icon-folder-open"></i> <a href="#">General</a>, <a href="#">Media</a></li> -->
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13 Comentarios</a></li>
+										<!-- <li><a href="#"><i class="icon-camera-retro"></i></a></li> -->
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.</p>
+									<a href="{% url 'app:conferencia_view' %}" class="more-link">Seguir leyendo</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-12">
+							<div class="grid-inner">
+								<div class="entry-image">
+									<a href="/static/base/images/slider/swiper/portada.jpg" data-lightbox="image"><img src="/static/base/images/slider/swiper/portada.jpg" alt="Standard Post with Image"></a>
+								</div>
+								<div class="entry-title">
+									<h2><a href="{% url 'app:conferencia_view' %}">UNCIÓN, FE Y COMPROMISO</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 10 de Julio del 2021</li>
+										<li><a href="#"><i class="icon-user"></i> admin</a></li>
+										<!-- <li><i class="icon-folder-open"></i> <a href="#">General</a>, <a href="#">Media</a></li> -->
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13 Comentarios</a></li>
+										<!-- <li><a href="#"><i class="icon-camera-retro"></i></a></li> -->
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.</p>
+									<a href="{% url 'app:conferencia_view' %}" class="more-link">Seguir leyendo</a>
+								</div>
+							</div>
+						</div>
+
+					</div><!-- #posts end -->
+
+					<!-- Pager
+					============================================= -->
+					<div class="d-flex justify-content-between mt-5">
+						<a href="#" class="btn btn-outline-secondary">&larr; Anterior</a>
+						<a href="#" class="btn btn-outline-dark">Siguiente &rarr;</a>
+					</div>
+					<!-- .pager end -->
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		{% endblock contenido %}
+
+
+</body>
+</html>
